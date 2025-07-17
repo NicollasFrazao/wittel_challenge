@@ -7,6 +7,7 @@
     </ul>
 
     <ul class="navbar-nav ml-auto">
+        {{--
         <!-- Authentication Links -->
         @guest
             @if (Route::has('login'))
@@ -39,5 +40,6 @@
                 </div>
             </li>
         @endguest
+        --}}
     </ul>
 </nav>
