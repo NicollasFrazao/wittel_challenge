@@ -1,5 +1,6 @@
 <nav class="mt-2" style="margin-top: 10px;">
-    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">        
+    <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false"> 
+        {{--       
         <li class="nav-header">AUTENTICAÇÃO</li>
 
         @guest
@@ -31,17 +32,18 @@
                     @csrf
                 </form>
             </li>
+        @endguest
+        --}}
+        
+        <li class="nav-header">GESTÃO</li>
 
-            <li class="nav-header">GESTÃO</li>
-
-            {{--
-            <li class="nav-item">
-                <a href="{{ route('contacts.index') }}" class="nav-link {{ \Request::is('*contacts*') ? 'active' : '' }}">
-                    <i class="nav-icon fas fa-book-open"></i>
-                    <p>Contatos</p>
-                </a>
-            </li>
-            --}}
-        @endguest   
+        {{--
+        <li class="nav-item">
+            <a href="{{ route('contacts.index') }}" class="nav-link {{ \Request::is('*contacts*') ? 'active' : '' }}">
+                <i class="nav-icon fas fa-book-open"></i>
+                <p>Contatos</p>
+            </a>
+        </li>
+        --}}
     </ul>
 </nav>
