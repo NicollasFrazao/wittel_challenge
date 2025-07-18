@@ -2,6 +2,9 @@
 
 cd /var/www/html
 
+echo "Limpando caches..."
+php artisan optimize:clear
+
 echo "Executando migrations..."
 php artisan migrate
 

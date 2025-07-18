@@ -43,3 +43,9 @@ seed:
 
 test:
 	${sail} test
+
+shell:
+	${sail} shell
+
+clear:
+	${sail} artisan optimize:clear
