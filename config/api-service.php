@@ -12,11 +12,11 @@ return [
     ],
     'models' => [
         'token' => [
-            'enable_policy' => true,
+            'enable_policy' => false,
         ],
     ],
     'route' => [
-        'panel_prefix' => true,
+        'panel_prefix' => false,
         'use_resource_middlewares' => false,
     ],
     'tenancy' => [
@@ -34,5 +34,5 @@ return [
         'auth:sanctum',
         // Add any additional middleware you want to apply to the logout route
     ],
-    'use-spatie-permission-middleware' => true,
+    'use-spatie-permission-middleware' => false,
 ];
