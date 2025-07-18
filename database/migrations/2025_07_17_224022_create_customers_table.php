@@ -20,6 +20,8 @@ return new class extends Migration
             $table->date('birth_date');
             $table->decimal('income', 10, 2)->nullable();
 
+            $table->softDeletes();
+
             $table->timestamps();
         });
     }
